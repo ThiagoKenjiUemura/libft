@@ -1,2 +1,2 @@
 # libft
-# libft
+Libft is a custom C library recreating standard libc functions and adding extra utilities for string, memory, and linked list operations. This project is part of the 42 School curriculum and aims to strengthen understanding of low-level programming, memory management, and clean code organization
