@@ -6,14 +6,14 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 17:19:58 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 18:05:09 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/16 19:43:40 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n);
-	
+
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
 	size_t	i;
