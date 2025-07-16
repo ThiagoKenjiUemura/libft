@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 17:04:28 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/15 17:19:38 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/16 15:41:19 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strrchr(const char *s, int c)
 		return ((char *)&s[i]);
 	while (s[i] != '\0')
 		i++;
-	while( i >= 0)
+	while (i >= 0)
 	{
 		if (s[i] == c)
 			return ((char *)&s[i]);
