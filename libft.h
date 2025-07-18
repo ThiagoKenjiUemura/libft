@@ -6,15 +6,15 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:52:07 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 15:24:10 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 15:58:22 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-#include <unistd.h>
-#include <stdlib.h>
+# include <unistd.h>
+# include <stdlib.h>
 
 int		ft_isalpha(int alpha);
 int		ft_isdigit(int digit);
@@ -39,7 +39,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
 void	*ft_memset(void *dest, int c, size_t buf);
 char	*ft_strrchr(const char *s, int c);
-void 	*ft_calloc(size_t nmemb, size_t size);
-char 	*ft_strdup(const char *s);
+void	*ft_calloc(size_t nmemb, size_t size);
+char	*ft_strdup(const char *s);
 
 #endif

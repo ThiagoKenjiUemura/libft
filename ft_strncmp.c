@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 17:19:58 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 13:40:14 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 15:40:02 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	size_t	i;
 
 	i = 0;
-	if(n == 0)
+	if (n == 0)
 		return (0);
 	while ((s1[i] != '\0' && i < n) || (s2[i] != '\0' && i < n))
 	{
