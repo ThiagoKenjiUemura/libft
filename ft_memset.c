@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 17:12:26 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/15 10:49:43 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 12:03:30 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memset(void *dest, int c, size_t buf);
 
 void	*ft_memset(void *dest, int c, size_t buf)
 {

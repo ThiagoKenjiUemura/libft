@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 18:55:32 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/15 11:45:42 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:34:14 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	ft_bzero(void *s, size_t n);
 
 void	ft_bzero(void *s, size_t n)
 {	

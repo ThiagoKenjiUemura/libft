@@ -6,11 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 15:49:29 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/14 15:55:46 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:34:54 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int c);
+#include "libft.h"
 
 int	ft_isprint(int c)
 {

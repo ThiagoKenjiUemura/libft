@@ -6,12 +6,12 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:52:07 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 20:23:44 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 15:24:10 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBGT_H
+# define LIBFT_H
 
 #include <unistd.h>
 #include <stdlib.h>
@@ -37,5 +37,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *big, const char *little, size_t len);
 int		ft_atoi(const char *nptr);
+void	*ft_memset(void *dest, int c, size_t buf);
+char	*ft_strrchr(const char *s, int c);
+void 	*ft_calloc(size_t nmemb, size_t size);
+char 	*ft_strdup(const char *s);
 
 #endif

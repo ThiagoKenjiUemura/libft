@@ -6,11 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:34:13 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/14 12:43:01 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:34:51 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int digit);
+#include "libft.h"
 
 int	ft_isdigit(int digit)
 {

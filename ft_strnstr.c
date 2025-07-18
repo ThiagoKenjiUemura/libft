@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 16:01:37 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 19:47:49 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:35:48 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-char	*ft_strnstr(const char *big, const char *little, size_t len);
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

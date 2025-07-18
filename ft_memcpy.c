@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 10:57:40 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 15:39:49 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:35:10 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memcpy(void *dest, const void *src, size_t n);
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 14:37:51 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 15:39:37 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:35:03 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

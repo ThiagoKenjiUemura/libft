@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 14:06:25 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 15:40:30 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:34:58 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memchr(const void *s, int c, size_t n);
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

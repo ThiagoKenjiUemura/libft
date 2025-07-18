@@ -6,11 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 16:34:28 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/15 16:35:50 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:36:01 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c);
+#include "libft.h"
 
 int	ft_toupper(int c)
 {

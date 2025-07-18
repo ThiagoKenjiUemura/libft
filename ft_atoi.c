@@ -6,11 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/16 19:50:40 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/16 20:30:40 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:34:05 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *nptr);
+#include "libft.h"
 
 int	ft_atoi(const char *nptr)
 {

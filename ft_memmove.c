@@ -6,13 +6,11 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 12:55:47 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/15 16:04:13 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/18 11:35:15 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-void	*ft_memmove(void *dest, const void *src, size_t n);
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
