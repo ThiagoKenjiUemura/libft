@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/15 15:43:31 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 15:47:21 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/21 15:26:33 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	if (size <= dst_len)
 		return (src_len + size);
 	if (size == 0)
-		return (src_len);
+		return (0);
 	while (src[i] != '\0' && dst_len + i < size - 1)
 	{
 		dst[dst_len + i] = src[i];

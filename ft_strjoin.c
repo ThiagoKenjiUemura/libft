@@ -1,42 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/07/18 15:39:35 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/21 16:15:39 by tkenji-u         ###   ########.fr       */
+/*   Created: 2025/07/21 14:35:27 by tkenji-u          #+#    #+#             */
+/*   Updated: 2025/07/21 16:14:40 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char	*subs;
-	size_t	subs_len;
-	size_t	s_len;
-	size_t	i;
+	size_t	s1i;
+	size_t	s2i;
+	char	*sc;
 
-	if (!s)
+	s1i = 0;
+	s2i = 0;
+	if (!s1)
+		return ((char *)s2);
+	if (!s2)
+		return ((char *)s1);
+	if (!s1 &&!s2)
 		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		subs_len = 0;
-	else if (len > s_len - start)
-		subs_len = s_len - start;
-	else
-		subs_len = len;
-	subs = malloc(subs_len + 1);
-	if (!subs)
-		return (NULL);
-	i = 0;
-	while (i < subs_len)
+	sc = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	while (s1[s1i] != '\0')
 	{
-		subs[i] = s[start + i];
-		i++;
+		sc[s1i] = s1[s1i];
+		s1i++;
 	}
-	subs[subs_len] = '\0';
-	return (subs);
+	while (s2[s2i] != '\0')
+	{
+		sc[s1i + s2i] = s2[s2i];
+		s2i++;
+	}
+	sc[s1i + s2i] = '\0';
+	return (sc);
 }
