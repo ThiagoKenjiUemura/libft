@@ -6,7 +6,7 @@
 #    By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/18 11:44:21 by tkenji-u          #+#    #+#              #
-#    Updated: 2025/07/21 17:44:37 by tkenji-u         ###   ########.fr        #
+#    Updated: 2025/07/22 14:48:33 by tkenji-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,8 @@ SRC	=	ft_atoi.c		\
 		ft_strdup.c		\
 		ft_substr.c		\
 		ft_strjoin.c	\
+		ft_strtrim.c	\
+		ft_split
 
 OBJS = $(SRC:.c=.o)
 

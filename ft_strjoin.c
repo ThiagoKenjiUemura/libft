@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/21 14:35:27 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/21 16:14:40 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/22 14:17:43 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,11 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	s1i = 0;
 	s2i = 0;
-	if (!s1)
-		return ((char *)s2);
-	if (!s2)
-		return ((char *)s1);
-	if (!s1 &&!s2)
+	if (!s1 || !s2)
 		return (NULL);
 	sc = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
 	while (s1[s1i] != '\0')
