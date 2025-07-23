@@ -5,14 +5,14 @@
 #                                                     +:+ +:+         +:+      #
 #    By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2025/07/18 11:44:21 by tkenji-u          #+#    #+#              #
-#    Updated: 2025/07/22 14:48:33 by tkenji-u         ###   ########.fr        #
+#    Created: 2025/07/23 11:00:00 by thiago            #+#    #+#              #
+#    Updated: 2025/07/23 18:42:52 by tkenji-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-SRC	=	ft_atoi.c		\
+SRC =	ft_atoi.c		\
 		ft_bzero.c		\
 		ft_calloc.c		\
 		ft_isalnum.c	\
@@ -26,9 +26,9 @@ SRC	=	ft_atoi.c		\
 		ft_memmove.c	\
 		ft_memset.c		\
 		ft_strchr.c		\
-		ft_strlcat.c 	\
+		ft_strlcat.c	\
 		ft_strlcpy.c	\
-		ft_strlen.c 	\
+		ft_strlen.c		\
 		ft_strncmp.c	\
 		ft_strnstr.c	\
 		ft_strrchr.c	\
@@ -38,7 +38,8 @@ SRC	=	ft_atoi.c		\
 		ft_substr.c		\
 		ft_strjoin.c	\
 		ft_strtrim.c	\
-		ft_split
+		ft_split.c		\
+		ft_itoa.c
 
 OBJS = $(SRC:.c=.o)
 
@@ -50,7 +51,7 @@ BONUS =	ft_lstadd_back_bonus.c	\
 		ft_lstlast_bonus.c		\
 		ft_lstmap_bonus.c		\
 		ft_lstnew_bonus.c		\
-		ft_lstsize_bonus.c		\
+		ft_lstsize_bonus.c
 
 BONUS_OBJS = $(BONUS:.c=.o)
 
@@ -59,23 +60,23 @@ CFLAGS = -Wall -Werror -Wextra
 RM = rm -rf
 AR = ar crs
 
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 $(NAME): $(OBJS)
 	$(AR) $@ $^
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $^ -o $@
 
 all: $(NAME)
 
 clean:
 	$(RM) $(OBJS) $(BONUS_OBJS)
 
-fclean:	clean
-	$(RM) $(NAME)		
+fclean: clean
+	$(RM) $(NAME)
 
-re:	fclean all
+re: fclean all
 
 bonus: $(OBJS) $(BONUS_OBJS)
-	$(AR) $(NAME) $(OBJS)  $(BONUS_OBJS)
+	$(AR) $(NAME) $(OBJS) $(BONUS_OBJS)
 
-.PHONY:	all clean fclean re bonus
+.PHONY: all clean fclean re bonus
