@@ -6,7 +6,7 @@
 #    By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 11:00:00 by thiago            #+#    #+#              #
-#    Updated: 2025/07/23 19:45:27 by tkenji-u         ###   ########.fr        #
+#    Updated: 2025/07/24 15:54:14 by tkenji-u         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,9 @@ SRC =	ft_atoi.c		\
 		ft_split.c		\
 		ft_itoa.c		\
 		ft_strmapi.c	\
-		ft_striteri.c
+		ft_striteri.c	\
+		ft_putchar_fd.c	\
+		ft_putstr_fd.c	\
 
 OBJS = $(SRC:.c=.o)
 
