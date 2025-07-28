@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 16:01:12 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 11:35:37 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/28 13:57:23 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,17 +24,3 @@ size_t	ft_strlen(const char *s)
 	}
 	return (length);
 }
-/*
-#include <stdio.h>
-int main(int argc, char *argv[])
-{
-	int i;
-
-	i = 1;
-	while (i < argc)
-	{
-		printf("%d\n", ft_strlen(argv[i]));
-		i++;
-	}
-}
-*/

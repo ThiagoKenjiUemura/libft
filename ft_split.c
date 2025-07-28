@@ -6,11 +6,16 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:34:38 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/23 18:31:40 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/28 13:59:01 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static size_t	count_words(const char *s, char c);
+static void		skip_delim(const char **s, char c);
+static void		free_split(char **arr, size_t i);
+static char		**ft_malloc(char **array, size_t malloc_size);
 
 static size_t	count_words(const char *s, char c)
 {

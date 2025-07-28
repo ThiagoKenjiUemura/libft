@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:43:24 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 11:34:36 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/28 13:56:10 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,16 +16,3 @@ int	ft_isalnum(char c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	char a = '1';
-	char b = 'a';
-	char c = '@';
-
-	printf("%d\n",ft_isalnum(a));
-	printf("%d\n",ft_isalnum(b));
-	printf("%d\n",ft_isalnum(c));
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/14 12:34:13 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/18 11:34:51 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/28 13:56:30 by tkenji-u         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,14 +19,3 @@ int	ft_isdigit(int digit)
 	else
 		return (0);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	char c = 'a';
-	char b = '1';
-
-	printf("%d\n", ft_isdigit(c));
-	printf("%d\n", ft_isdigit(b));
-}
-*/
