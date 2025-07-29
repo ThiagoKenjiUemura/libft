@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+        */
+/*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:34:38 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/28 13:59:01 by tkenji-u         ###   ########.fr       */
+/*   Updated: 2025/07/29 13:06:46 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**ft_split(char const *s, char c)
 		{
 			len = 0;
 			while (s[len] && s[len] != c)
-					len++;
+				len++;
 			arr[i] = ft_substr(s, 0, len);
 			if (!arr[i])
 				return (free_split(arr, i), NULL);
