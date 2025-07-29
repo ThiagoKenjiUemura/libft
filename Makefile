@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tkenji-u <tkenji-u@student.42.fr>          +#+  +:+       +#+         #
+#    By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/07/23 11:00:00 by thiago            #+#    #+#              #
-#    Updated: 2025/07/28 17:22:40 by tkenji-u         ###   ########.fr        #
+#    Updated: 2025/07/29 19:10:13 by thiagouemur      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,9 +55,9 @@ BONUS =	ft_lstadd_back_bonus.c	\
 		ft_lstdelone_bonus.c	\
 		ft_lstiter_bonus.c		\
 		ft_lstlast_bonus.c		\
-		ft_lstmap_bonus.c		\
 		ft_lstnew_bonus.c		\
-		ft_lstsize_bonus.c
+		ft_lstsize_bonus.c		\
+		ft_lstmap_bonus.c		
 
 BONUS_OBJS = $(BONUS:.c=.o)
 

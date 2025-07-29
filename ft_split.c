@@ -6,7 +6,7 @@
 /*   By: thiagouemura <thiagouemura@student.42.f    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/22 14:34:38 by tkenji-u          #+#    #+#             */
-/*   Updated: 2025/07/29 13:06:46 by thiagouemur      ###   ########.fr       */
+/*   Updated: 2025/07/29 19:01:07 by thiagouemur      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static size_t	count_words(const char *s, char c);
 static void		skip_delim(const char **s, char c);
 static void		free_split(char **arr, size_t i);
-static char		**ft_malloc(char **array, size_t malloc_size);
+static char		*get_word(const char *s, char c);
 
 static size_t	count_words(const char *s, char c)
 {
@@ -26,7 +26,7 @@ static size_t	count_words(const char *s, char c)
 	in_word = 0;
 	while (*s)
 	{
-		if (*s != c && in_word == 0)
+		if (*s != c && !in_word)
 		{
 			in_word = 1;
 			count++;
@@ -40,50 +40,51 @@ static size_t	count_words(const char *s, char c)
 
 static void	skip_delim(const char **s, char c)
 {
-	while (**s == c && **s)
+	while (**s && **s == c)
 		(*s)++;
 }
 
-static	void	free_split(char **arr, size_t i)
+static void	free_split(char **arr, size_t i)
 {
 	while (i > 0)
-	{
 		free(arr[--i]);
-	}
 	free(arr);
 }
 
-static char	**ft_malloc(char **array, size_t malloc_size)
+static char	*get_word(const char *s, char c)
 {
-	array = malloc((malloc_size + 1) * sizeof(char *));
-	if (!array)
-		return (NULL);
-	return (array);
+	size_t	len;
+
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (ft_substr(s, 0, len));
 }
 
 char	**ft_split(char const *s, char c)
 {
 	char	**arr;
+	size_t	words;
 	size_t	i;
-	size_t	len;
 
-	arr = NULL;
-	arr = ft_malloc(arr, count_words(s, c));
+	if (!s)
+		return (NULL);
+	words = count_words(s, c);
+	arr = malloc((words + 1) * sizeof(char *));
+	if (!arr)
+		return (NULL);
 	i = 0;
-	while (*s)
+	while (i < words)
 	{
 		skip_delim(&s, c);
-		if (*s)
+		arr[i] = get_word(s, c);
+		if (!arr[i])
 		{
-			len = 0;
-			while (s[len] && s[len] != c)
-				len++;
-			arr[i] = ft_substr(s, 0, len);
-			if (!arr[i])
-				return (free_split(arr, i), NULL);
-			i++;
-			s += len;
+			free_split(arr, i);
+			return (NULL);
 		}
+		s += ft_strlen(arr[i]);
+		i++;
 	}
 	arr[i] = NULL;
 	return (arr);
